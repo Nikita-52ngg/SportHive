@@ -128,7 +128,7 @@ iframe {
 }
 .banner {
     position: relative;
-    width: 100%;
+    width: 94.75%;%;
     height: 600px;
     background: url("./banner-background.jpg") no-repeat center center/cover; /* Замените на путь к вашему изображению */
     display: flex;
@@ -139,7 +139,7 @@ iframe {
 }
 
 .banner-content {
-    max-width: 30%;
+    max-width: 50%;
 }
 
 .banner-content h1 {
