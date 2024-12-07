@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расчет стоимости клубной карты</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2e0000;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #880d0d;
+            border-radius: 8px;
+            padding: 30px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="tel"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 4px;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            margin-right: 10px;
+        }
+        .btn {
+            display: block;
+            background-color: #d32f2f;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        .btn:hover {
+            background-color: #b71c1c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Расчет стоимости клубной карты</h1>
+        <form>
+            <h2>Контактные данные</h2>
+            <label for="name">Напишите ваше ФИО</label>
+            <input type="text" id="name" placeholder="Введите ваше ФИО" required>
+            
+            <label for="phone">Номер телефона</label>
+            <input type="tel" id="phone" placeholder="+7 ___ ___ ____" required>
+            
+            <input type="checkbox" id="consent">
+            <label for="consent">Согласен с условиями обработки данных</label>
+            
+            <h2>Параметры карты</h2>
+            <label>Какие зоны вы хотите посетить?</label>
+            <input type="checkbox" id="fitness"> Фитнес<br>
+            <input type="checkbox" id="terms"> Термы+Фитнес<br>
+            <input type="checkbox" id="spa"> СПА+Фитнес<br>
+            <input type="checkbox" id="all"> Фитнес+Термы+СПА<br>
+            
+            <label>На какой срок нужна карта?</label>
+            <input type="radio" name="duration" value="1 год"> 1 год<br>
+            <input type="radio" name="duration" value="6 месяцев"> 6 месяцев<br>
+            <input type="radio" name="duration" value="3 месяца"> 3 месяца<br>
+            <input type="radio" name="duration" value="не определился"> Затрудняюсь ответить<br>
+            
+            <label>Нужна ли рассрочка?</label>
+            <input type="radio" name="installment" value="да"> Да<br>
+            <input type="radio" name="installment" value="нет"> Нет<br>
+            <input type="radio" name="installment" value="не определился"> Затрудняюсь ответить<br>
+            
+            <label>Когда удобно посещать занятия?</label>
+            <input type="radio" name="time" value="утром"> Утром<br>
+            <input type="radio" name="time" value="днем"> Днем<br>
+            <input type="radio" name="time" value="вечером"> Вечером<br>
+            <input type="radio" name="time" value="в любое время"> В любое время<br>
+            
+            <label>Нужен ли персональный тренер?</label>
+            <input type="radio" name="trainer" value="да"> Да<br>
+            <input type="radio" name="trainer" value="нет"> Нет<br>
+            <input type="radio" name="trainer" value="не определился"> Затрудняюсь ответить<br>
+            <p></p>
+            <button type="submit" onclick="document.location='calcu2.html'" class="btn">Рассчитать стоимость</button>
+            
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СПА и Сауна</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #f04c3e;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            font-size: 24px;
+            color: #f04c3e;
+            margin-bottom: 10px;
+        }
+        .section p {
+            line-height: 1.6;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .feature {
+            flex: 1 1 calc(33.333% - 20px);
+            background: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .feature h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .feature p {
+            font-size: 14px;
+            color: #666;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .gallery img {
+            flex: 1 1 calc(33.333% - 20px);
+            max-width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+        footer a {
+            color: #f04c3e;
+            text-decoration: none;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #f04c3e;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .back-btn:hover {
+            background-color: #d94335;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>СПА и Сауна</h1>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>Расслабьтесь и восстановитесь в СПА и сауне</h2>
+            <p>Наши СПА-процедуры и сауна — это идеальное место для отдыха и восстановления после тренировок. Насладитесь атмосферой уюта и расслабления. Мы предлагаем различные процедуры для улучшения самочувствия и здоровья.</p>
+        </div>
+        <div class="section">
+            <h2>Наши услуги</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>Горячая сауна</h3>
+                    <p>Наши сауны идеально подходят для расслабления и детоксикации. Они помогают улучшить кровообращение и снять стресс.</p>
+                </div>
+                <div class="feature">
+                    <h3>СПА-процедуры</h3>
+                    <p>Мы предлагаем различные СПА-процедуры, такие как ароматерапия, массажи и уход за кожей, которые помогут вам расслабиться и восстановиться.</p>
+                </div>
+                <div class="feature">
+                    <h3>Бассейн</h3>
+                    <p>Для вашего удобства у нас есть бассейн, в котором можно поплавать или расслабиться после сауны и массажа.</p>
+                </div>
+                <div class="feature">
+                    <h3>Массаж</h3>
+                    <p>Наши профессиональные массажисты предлагают широкий спектр услуг: от расслабляющего массажа до спортивного массажа для восстановления мышц.</p>
+                </div>
+                <div class="feature">
+                    <h3>Ароматерапия</h3>
+                    <p>СПА-услуги включают ароматерапию, которая поможет вам снять стресс и улучшить общее состояние.</p>
+                </div>
+                <div class="feature">
+                    <h3>Релаксационные процедуры</h3>
+                    <p>Мы предлагаем специальные процедуры для глубокого расслабления, такие как обертывания и гидротерапия.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Галерея</h2>
+            <div class="gallery">
+                <img src="./img/spit.jpg" alt="СПА 1">
+                <img src="./img/bas.jpg" alt="СПА 2">
+                <img src="./img/vd.jpg" alt="СПА 3">
+            </div>
+        </div>
+        <a href="services.html" class="back-btn">Вернуться к списку услуг</a>
+    </div>
+    <footer>
+        <p>© 2024 Спортивный клуб. Все права защищены.</p>
+    </footer>
+</body>
+</html>

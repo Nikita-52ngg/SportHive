@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Массаж</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #f04c3e;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            font-size: 24px;
+            color: #f04c3e;
+            margin-bottom: 10px;
+        }
+        .section p {
+            line-height: 1.6;
+        }
+        .massage-types {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .massage-type {
+            flex: 1 1 calc(33.333% - 20px);
+            background: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .massage-type h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .massage-type p {
+            font-size: 14px;
+            color: #666;
+        }
+        .specialists {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .specialist {
+            flex: 1 1 calc(33.333% - 20px);
+            background: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .specialist img {
+            width: 30%;
+            height: auto;
+            border-radius: 50%;
+        }
+        .specialist h3 {
+            font-size: 18px;
+            color: #333;
+            margin-top: 10px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+        footer a {
+            color: #f04c3e;
+            text-decoration: none;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #f04c3e;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .back-btn:hover {
+            background-color: #d94335;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Массаж</h1>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>О массажных услугах</h2>
+            <p>Массаж — это не только способ расслабления, но и отличный способ укрепить здоровье, снять мышечное напряжение и улучшить общее самочувствие. Наши специалисты предлагают широкий спектр услуг, подходящих для каждого.</p>
+        </div>
+        <div class="section">
+            <h2>Типы массажа</h2>
+            <div class="massage-types">
+                <div class="massage-type">
+                    <h3>Классический массаж</h3>
+                    <p>Улучшает кровообращение и снимает стресс.</p>
+                </div>
+                <div class="massage-type">
+                    <h3>Спортивный массаж</h3>
+                    <p>Подходит для восстановления после тренировок.</p>
+                </div>
+                <div class="massage-type">
+                    <h3>Расслабляющий массаж</h3>
+                    <p>Помогает снять усталость и напряжение.</p>
+                </div>
+                <div class="massage-type">
+                    <h3>Терапевтический массаж</h3>
+                    <p>Показан при болях в спине и мышцах.</p>
+                </div>
+                <div class="massage-type">
+                    <h3>Антицеллюлитный массаж</h3>
+                    <p>Улучшает внешний вид кожи.</p>
+                </div>
+                <div class="massage-type">
+                    <h3>Детский массаж</h3>
+                    <p>Способствует гармоничному развитию ребёнка.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Наши специалисты</h2>
+            <div class="specialists">
+                <div class="specialist">
+                    <img src="./img/tr3.jpg" alt="Специалист 1">
+                    <h3>Марина Иванова</h3>
+                    <p>Сертифицированный массажист с опытом работы более 10 лет.</p>
+                </div>
+                <div class="specialist">
+                    <img src="./img/tr4.png" alt="Специалист 2">
+                    <h3>Дмитрий Петров</h3>
+                    <p>Специалист по спортивному массажу.</p>
+                </div>
+            </div>
+        </div>
+        <a href="services.html" class="back-btn">Вернуться к списку услуг</a>
+    </div>
+    <footer>
+        <p>© 2024 Спортивный клуб. Все права защищены.
+    </footer>
+</body>
+</html>

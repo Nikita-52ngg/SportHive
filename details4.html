@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренажёрный зал</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #f04c3e;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            font-size: 24px;
+            color: #f04c3e;
+            margin-bottom: 10px;
+        }
+        .section p {
+            line-height: 1.6;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .feature {
+            flex: 1 1 calc(33.333% - 20px);
+            background: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .feature h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .feature p {
+            font-size: 14px;
+            color: #666;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .gallery img {
+            flex: 1 1 calc(33.333% - 20px);
+            max-width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+        footer a {
+            color: #f04c3e;
+            text-decoration: none;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #f04c3e;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .back-btn:hover {
+            background-color: #d94335;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Тренажёрный зал</h1>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>Современный тренажёрный зал</h2>
+            <p>Наш тренажёрный зал оборудован всем необходимым для эффективных тренировок. У нас вы найдёте профессиональное оборудование, которое подходит как для новичков, так и для опытных спортсменов.</p>
+        </div>
+        <div class="section">
+            <h2>Особенности нашего зала</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>Кардио-зона</h3>
+                    <p>Современные беговые дорожки, велотренажёры и эллиптические машины.</p>
+                </div>
+                <div class="feature">
+                    <h3>Силовое оборудование</h3>
+                    <p>Тренажёры для всех групп мышц, штанги и гантели.</p>
+                </div>
+                <div class="feature">
+                    <h3>Зона функционального тренинга</h3>
+                    <p>Кроссоверы, петли TRX, медболы и многое другое.</p>
+                </div>
+                <div class="feature">
+                    <h3>Большое пространство</h3>
+                    <p>Зал с удобной планировкой и вентиляцией.</p>
+                </div>
+                <div class="feature">
+                    <h3>Опытные тренеры</h3>
+                    <p>Всегда готовы помочь и проконсультировать.</p>
+                </div>
+                <div class="feature">
+                    <h3>Удобное расписание</h3>
+                    <p>Тренируйтесь в удобное для вас время.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Галерея</h2>
+            <div class="gallery">
+                <img src="./img/promo3.jpg" alt="Тренажёрный зал">
+                <img src="./img/kar.jpg" alt="Кардио-зона">
+                <img src="./img/cil.jpg" alt="Силовая зона">
+                <img src="./img/fun.jpg" alt="Функциональный тренинг">
+                <img src="./img/obo.jpeg" alt="Оборудование">
+                <img src="./img/obd.jpg" alt="Общий вид зала">
+            </div>
+        </div>
+        <a href="services.html" class="back-btn">Вернуться к списку услуг</a>
+    </div>
+    <footer>
+        <p>© 2024 Спортивный клуб. Все права защищены.</p>
+    </footer>
+</body>
+</html>

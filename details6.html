@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зона отдыха</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #f04c3e;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            font-size: 24px;
+            color: #f04c3e;
+            margin-bottom: 10px;
+        }
+        .section p {
+            line-height: 1.6;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .feature {
+            flex: 1 1 calc(33.333% - 20px);
+            background: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .feature h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .feature p {
+            font-size: 14px;
+            color: #666;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .gallery img {
+            flex: 1 1 calc(33.333% - 20px);
+            max-width: 49%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+        footer a {
+            color: #f04c3e;
+            text-decoration: none;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #f04c3e;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .back-btn:hover {
+            background-color: #d94335;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Зона отдыха</h1>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>Отдыхайте с комфортом</h2>
+            <p>В нашей зоне отдыха вы можете расслабиться после интенсивных тренировок, насладиться тишиной и уютной атмосферой. Мы создаём пространство для вашего восстановления, где можно отдохнуть, пообщаться с друзьями или просто насладиться времяпрепровождением.</p>
+        </div>
+        <div class="section">
+            <h2>Услуги в зоне отдыха</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>Чай и кофе</h3>
+                    <p>Попробуйте ароматный чай и кофе, приготовленные для вас нашими баристами. Это поможет вам расслабиться и восстановиться после тренировки.</p>
+                </div>
+                <div class="feature">
+                    <h3>Массаж</h3>
+                    <p>В зоне отдыха доступны массажные процедуры для восстановления мышц. Наши профессиональные массажисты помогут вам расслабиться.</p>
+                </div>
+                <div class="feature">
+                    <h3>Фитнес-бар</h3>
+                    <p>В фитнес-баре предлагаются полезные напитки и лёгкие закуски, которые обеспечат вас энергией после тренировки.</p>
+                </div>
+                <div class="feature">
+                    <h3>Спокойная атмосфера</h3>
+                    <p>Зона отдыха оборудована мягкими креслами и уютными уголками для того, чтобы вы могли по-настоящему расслабиться.</p>
+                </div>
+                <div class="feature">
+                    <h3>Книги и журналы</h3>
+                    <p>У нас есть уголок для чтения, где вы можете насладиться книгой или свежими журналами.</p>
+                </div>
+                <div class="feature">
+                    <h3>Wi-Fi</h3>
+                    <p>Предоставляем бесплатный доступ к Wi-Fi, чтобы вы могли оставаться на связи с друзьями и семьёй или работать.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Галерея</h2>
+            <div class="gallery">
+                <img src="./img/zonaOt.jpg" alt="Зона отдыха 1">
+                <img src="./img/zonaOtt.jpg" alt="Зона отдыха 2">
+            </div>
+        </div>
+        <a href="services.html" class="back-btn">Вернуться к списку услуг</a>
+    </div>
+    <footer>
+        <p>© 2024 Спортивный клуб. Все права защищены.</p>
+    </footer>
+</body>
+</html>

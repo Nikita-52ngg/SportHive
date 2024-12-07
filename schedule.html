@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportHive</title>
+    <link rel="stylesheet" href="styles-2.css">
+</head>
+<body>
+
+    <div class="header-top">
+        <span>+7 (666) 877-77-77</span>
+        <a href="#">Telegram</a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">VK</a>
+    </div>
+
+    <div class="header-main">
+        <div class="logo">SportHive</div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О клубе</a></li>
+            <li><a href="services.html">Услуги</a></li>
+        </ul>
+    </div>
+
+    <div class="photo-block">
+        <img src="./img/rr.jpg" alt="Пример фото">
+        <div class="caption">«Единственное, что стоит между вами и вашей целью, — это ваше желание и действие»</div>
+    </div>
+
+    <div class="schedule-container">
+        <div class="schedule-header">
+            <h2>Расписание занятий</h2>
+            <div class="filters">
+                <select id="time-filter">
+                    <option value="all">Все время</option>
+                    <option value="today">Сегодня</option>
+                    <option value="tomorrow">Завтра</option>
+                    <option value="week">Неделя</option>
+                </select>
+                <select id="hall-filter">
+                    <option value="all">Все залы</option>
+                    <option value="hall1">Зал 1</option>
+                    <option value="hall2">Зал 2</option>
+                    <option value="hall3">Зал 3</option>
+                </select>
+                <select id="type-filter">
+                    <option value="all">Все занятия</option>
+                    <option value="cardio">Кардио</option>
+                    <option value="yoga">Йога</option>
+                    <option value="strength">Силовая тренировка</option>
+                    <option value="dance">Танцы</option>
+                    <option value="pilates">Пилатес</option>
+                    <option value="aqua">Аквааэробика</option>
+                </select>
+                <input type="text" id="search-filter" placeholder="Поиск занятия" oninput="filterSchedule()">
+                <button onclick="filterSchedule()">Применить</button>
+            </div>
+        </div>
+
+        <div class="schedule-grid" id="schedule-grid">
+            <!-- Занятия (всего 16 для 4x4) -->
+            <div class="time-slot" data-type="cardio" data-hall="hall1" data-time="today">
+                <div class="time">06:00</div>
+                <div class="details">
+                    <div class="name">Ранний кардио</div>
+                    <div class="instructor">Тренер: Иванов</div>
+                </div>
+            </div>
+            <div class="time-slot" data-type="yoga" data-hall="hall2" data-time="today">
+                <div class="time">07:00</div>
+                <div class="details">
+                    <div class="name">Йога</div>
+                    <div class="instructor">Тренер: Смирнова</div>
+                </div>
+            </div>
+            <div class="time-slot" data-type="strength" data-hall="hall3" data-time="tomorrow">
+                <div class="time">08:30</div>
+                <div class="details">
+                    <div class="name">Силовая тренировка</div>
+                    <div class="instructor">Тренер: Петров</div>
+                </div>
+            </div>
+            <div class="time-slot" data-type="dance" data-hall="hall1" data-time="week">
+                <div class="time">09:00</div>
+                <div class="details">
+                    <div class="name">Танцы</div>
+                    <div class="instructor">Тренер: Васильев</div>
+                </div>
+            </div>
+
+            <div class="time-slot" data-type="pilates" data-hall="hall2" data-time="week">
+                <div class="time">10:30</div>
+                <div class="details">
+                    <div class="name">Пилатес</div>
+                    <div class="instructor">Тренер: Михайлова</div>
+                </div>
+            </div>
+            <div class="time-slot" data-type="aqua" data-hall="hall3" data-time="today">
+                <div class="time">12:00</div>
+                <div class="details">
+                    <div class="name">Аквааэробика</div>
+                    <div class="instructor">Тренер: Антонов</div>
+                </div>
+            </div>
+            <div class="time-slot" data-type="cardio" data-hall="hall1" data-time="tomorrow">
+                <div class="time">13:00</div>
+                <div class="details">
+                    <div class="name">Кардио тренировка</div>
+                    <div class="instructor">Тренер: Смирнов</div>
+                </div>
+            </div>
+            <div class="time-slot" data-type="yoga" data-hall="hall2" data-time="today">
+                <div class="time">14:30</div>
+                <div class="details">
+                    <div class="name">Йога</div>
+                    <div class="instructor">Тренер: Воронов</div>
+                </div>
+            </div>
+
+            <div class="time-slot" data-type="strength" data-hall="hall3" data-time="week">
+                <div class="time">16:00</div>
+                <div class="details">
+                    <div class="name">Силовая тренировка</div>
+                    <div class="instructor">Тренер: Кузнецов</div>
+                </div>
+            </div>
+            <div class="time-slot" data-type="dance" data-hall="hall1" data-time="week">
+                <div class="time">18:00</div>
+                <div class="details">
+                    <div class="name">Танцы</div>
+                    <div class="instructor">Тренер: Жукова</div>
+                </div>
+            </div>
+            <div class="time-slot" data-type="pilates" data-hall="hall2" data-time="tomorrow">
+                <div class="time">19:30</div>
+                <div class="details">
+                    <div class="name">Пилатес</div>
+                    <div class="instructor">Тренер: Орлова</div>
+                </div>
+            </div>
+            <div class="time-slot" data-type="aqua" data-hall="hall3" data-time="today">
+                <div class="time">21:00</div>
+                <div class="details">
+                    <div class="name">Аквааэробика</div>
+                    <div class="instructor">Тренер: Зайцева</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="promotions">
+        <h2>Акции и специальные предложения</h2>
+        <div class="promotions-grid">
+          <div class="promotion-card">
+            <img src="./img/promo1.jpg" alt="Скидка на первую тренировку">
+            <div class="promotion-info">
+              <h3>Скидка 20% на первую тренировку!</h3>
+              <p>Попробуйте наш клуб с выгодой и получите персональное занятие со скидкой.</p>
+              <button onclick="document.location='calcu.html'" class="btn">Узнать больше</button>
+            </div>
+          </div>
+          <div class="promotion-card">
+            <img src="./img/promo2.jpg" alt="Абонемент 2+1">
+            <div class="promotion-info">
+              <h3>Абонемент 2+1</h3>
+              <p>Купите два месяца и получите третий в подарок. Спешите, предложение ограничено!</p>
+              <button onclick="document.location='calcu.html'" class="btn">Купить сейчас</button>
+            </div>
+          </div>
+          <div class="promotion-card">
+            <img src="./img/promo3.jpg" alt="Семейный абонемент">
+            <div class="promotion-info">
+              <h3>Семейный абонемент</h3>
+              <p>Скидка 30% при покупке абонемента для всей семьи. Тренируйтесь вместе!</p>
+              <button onclick="document.location='calcu.html'" class="btn">Подробнее</button>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <script>
+        // Фильтрация расписания
+        function filterSchedule() {
+            var timeFilter = document.getElementById("time-filter").value;
+            var hallFilter = document.getElementById("hall-filter").value;
+            var typeFilter = document.getElementById("type-filter").value;
+            var searchFilter = document.getElementById("search-filter").value.toLowerCase();
+
+            var scheduleItems = document.querySelectorAll('.time-slot');
+
+            scheduleItems.forEach(function(item) {
+                var matchesTime = (timeFilter === "all" || item.dataset.time === timeFilter);
+                var matchesHall = (hallFilter === "all" || item.dataset.hall === hallFilter);
+                var matchesType = (typeFilter === "all" || item.dataset.type === typeFilter);
+                var matchesSearch = (searchFilter === "" || item.querySelector('.name').textContent.toLowerCase().includes(searchFilter));
+
+                if (matchesTime && matchesHall && matchesType && matchesSearch) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+    <footer class="footer">
+        <div class="contacts">
+            <h3>Контакты</h3>
+            <p>Адрес:<br>г. Астрахань, ул. Куликова, д. 16</p>
+            <p>Телефон:<br><a href="tel:+76667717760">+7 (666) 771-77-60</a></p>
+            <p>E-mail:<br><a href="mailto:Sport_52@Hive-on.ru">Sport_52@Hive-on.ru</a></p>
+            <div class="map">
+                <iframe src="https://yandex.ru/map-widget/v1/?ll=48.057692%2C46.354199&mode=routes&rtext=~46.354199%2C48.065541&rtt=auto&ruri=~ymapsbm1%3A%2F%2Forg%3Foid%3D171851174954&z=15.07"></iframe>
+            </div>
+        </div>
+
+        <div class="info">
+            <h3>SportHive</h3>
+            <p>Время работы:</p>
+            <p>Будни: 07:00 - 23:00<br>Бассейн: 07:00 - 23:00</p>
+            <p>Выходные: 09:00 - 23:00<br>Бассейн: 09:00 - 23:00</p>
+        </div>
+
+        <div class="links">
+            <h3>Полезные ссылки</h3>
+            <p>Тренажерный зал<br>Спортивный бассейн<br>Персональный тренинг</p>
+            <p>Скачать приложение:</p>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Download_on_the_App_Store_Badge_US-UK_blk_092917.svg" alt="App Store"></a>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; АО Европейские технологии и сервис, 2021 | Использование cookies | Политика обработки персональных данных | Права посещения
+        </div>
+    </footer>    
+
+</body>
+</html>
